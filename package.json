@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha --recursive ./test/specs",
     "coffee": "coffee -co ./ ./src",
-    "dev": "npm run coffee && npm run test"
+    "dev": "npm run coffee && npm run test",
+    "build": "coffee --output lib --compile src/lib/index.coffee"
   },
   "keywords": [
     "metalsmith",
